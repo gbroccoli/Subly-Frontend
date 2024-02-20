@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './pages/App'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "./app/font/stylesheet.css"
+import "./css/fonst-style.css"
 import "./index.css"
 
 
