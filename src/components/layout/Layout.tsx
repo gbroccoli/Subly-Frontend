@@ -1,13 +1,9 @@
-import { FC, ReactNode } from "react"
-
-interface layout_props {
-    children: ReactNode,
-    classStyle?: string
-}
+import { layout_props } from "@/app/models/main-model";
+import { FC } from "react"
 
 const Layout: FC<layout_props> = ({ children, classStyle }) => {
     return (
-        <div className={`container mx-auto ${classStyle}`}>
+        <div className={`container mx-auto flex-[1_0_auto] ${classStyle}`}>
             {children}
         </div>
     )
