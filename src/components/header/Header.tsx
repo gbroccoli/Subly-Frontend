@@ -9,7 +9,9 @@ const Header = () => {
         <header className="flex-[0_0_auto]">
             <Layout classStyle="my-[20px]">
                 <div className="flex items-center shadow p-4 rounded-md justify-between">
-                    <Logotip link={true} />
+                    <div className="flex items-center">
+                        <Logotip classStyle="ml-[15px]" link={true}/>
+                    </div>
                     <Profile name="Администратор" />
                 </div>
             </Layout>

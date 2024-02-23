@@ -1,0 +1,8 @@
+.humburger {
+    width: 115px;
+    transition: width 0.2s ease-in;
+}
+
+.humburger .show {
+    width: 350px;
+}
