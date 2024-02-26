@@ -3,7 +3,7 @@ import { FC } from "react"
 
 const Layout: FC<layout_props> = ({ children, classStyle }) => {
     return (
-        <div className={`container mx-auto flex-[1_0_auto] ${classStyle}`}>
+        <div className={`flex-[1_0_auto] ${classStyle}`}>
             {children}
         </div>
     )

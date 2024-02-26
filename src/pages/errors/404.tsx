@@ -8,13 +8,13 @@ const Erorr404 = () => {
 
     return (
         <>
-            <Layout classStyle="max-w-[1920px] my-[50px] flex items-center">
+            <Layout classStyle="max-w-[1920px] my-[50px] flex items-center p-[30px]">
                 <div className="gird grid-cols-6">
                     <div className="space-y-4">
-                        <div className="col-start-1 roboto-bold text-[32px]">
+                        <div className="col-start-1 roboto-bold text-[30px]">
                             Оу, данная страница не найдена!
                         </div>
-                        <div>
+                        <div className="text-wrap">
                             Может данная страница появится когда-то
                         </div>
                         <div>

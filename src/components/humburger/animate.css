@@ -1,8 +1,23 @@
-.humburger {
-    width: 115px;
-    transition: width 0.2s ease-in;
+@media (hover: hover) {
+    .btn:hover {
+        background-color: rgb(75 85 99 / 0.35);
+    }
 }
 
-.humburger .show {
-    width: 350px;
+@media screen and (max-width: 767px) {
+    .humburger {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .humburger .show {
+        height: 550px;
+    }
+
+    .hrum {
+        height: 5000px;
+    }
+
 }

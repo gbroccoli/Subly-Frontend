@@ -1,4 +1,4 @@
-import { ElementType, useState } from "react";
+import { ElementType, useRef, useState } from "react";
 import HumburgerMenuItem from "./Humburger-item";
 import BtnIcon from "@/UI/button/bntIcon";
 import Menu_3 from "@/UI/icon/Menu-3";
@@ -16,6 +16,11 @@ const menu: MenuItems[] = [
         "title": 'Главная',
         "icon": Home,
         "url": '/'
+    },
+    {
+        "title": 'profile',
+        "icon": Home,
+        "url": '/profile'
     },
     {
         "title": "Настройки",
@@ -56,16 +61,12 @@ const HumburgerMenu = () => {
     }
 
     return (
-        <div className={`humburger fixed top-0 left-0 h-full transition-width`}>
-            <div className={`humburger shadow-md bg-white ${show ? 'show' : ""} rounded-r-[40px] h-full overflow-hidden px-9 py-16`}>
-                <div className="humburger-button overflow-hidden">
-                    <BtnIcon classStyle="shadow-md p-2 hover:shadow-inner hover:bg-gray-600/35 rounded-md" func={clickShow}>
-                        <Menu_3 />
-                    </BtnIcon>
-                </div>
-                <div className="humburger-content mt-[150px] overflow-hidden space-y-8">
-                    <RwenderItems />
-                </div>
+        <div className={`bg-white humburger show md:w-max-350px border transition-all duration-300 p-2 ${show ? 'h-[550px] md:h-full md:w-[350px]' : 'h-[100px] md:h-full w-full md:w-[120px]'} flex flex-col py-8 px-6 md:py-16 md:px-10 space-y-6`}>
+            <BtnIcon func={clickShow} classStyle="p-2 border rounded-xl h-[40px] w-[40px]" >
+                <Menu_3 />
+            </BtnIcon>
+            <div className="w-full overflow-hidden space-y-5">
+                <RwenderItems />
             </div>
         </div>
     )

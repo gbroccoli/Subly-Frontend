@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      jkhkjhkjhkjh
+      это страница Page "Home"
     </>
   )
 }
