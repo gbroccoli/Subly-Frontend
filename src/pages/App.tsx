@@ -1,6 +1,7 @@
+import { useEffect } from "react"
 
 function App() {
-  document.title = "Home - Subly"
+  document.title = "Главная - Subly"
 
   return (
     <>

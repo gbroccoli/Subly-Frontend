@@ -7,6 +7,8 @@ import "@/app/font/stylesheet.css"
 import "@/css/fonst-style.css"
 import MainLayout from '@/components/layout/MainLayout'
 import Erorr404 from '@/pages/errors/404'
+import Setting from "@/pages/Setting"
+import Profile from "@/pages/profile/Profile"
 
 
 const routers = createBrowserRouter([
@@ -17,6 +19,14 @@ const routers = createBrowserRouter([
       {
         path: "/",
         element: <App />,
+      },
+      {
+        path: "/setting",
+        element: <Setting />
+      },
+      {
+        path: "/profile",
+        element: <Profile />
       }
     ]
   },

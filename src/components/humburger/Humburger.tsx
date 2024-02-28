@@ -1,9 +1,11 @@
-import { ElementType, useRef, useState } from "react";
+import { ElementType, useState } from "react";
 import HumburgerMenuItem from "./Humburger-item";
 import BtnIcon from "@/UI/button/bntIcon";
 import Menu_3 from "@/UI/icon/Menu-3";
 import "./animate.css"
 import Home from "@/UI/icon/Home";
+import Cog_6_tooth from "@/UI/icon/Cog-6-tooth";
+import User from "@/UI/icon/User";
 
 interface MenuItems {
     title: string
@@ -18,13 +20,13 @@ const menu: MenuItems[] = [
         "url": '/'
     },
     {
-        "title": 'profile',
-        "icon": Home,
+        "title": 'Профиль',
+        "icon": User,
         "url": '/profile'
     },
     {
         "title": "Настройки",
-        "icon": Menu_3,
+        "icon": Cog_6_tooth,
         "url": "/setting"
     }
 ];
