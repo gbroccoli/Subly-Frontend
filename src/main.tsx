@@ -5,16 +5,16 @@ import App from '@/pages/App'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "@/app/font/stylesheet.css"
 import "@/css/fonst-style.css"
-import MainLayout from '@/components/layout/MainLayout'
 import Erorr404 from '@/pages/errors/404'
 import Setting from "@/pages/Setting"
 import Profile from "@/pages/profile/Profile"
+import MainLayoutPage from "./components/layout/MainLayout"
 
 
 const routers = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />,
+    element: <MainLayoutPage />,
     children: [
       {
         path: "/",

@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+
 
 function App() {
   document.title = "Главная - Subly"

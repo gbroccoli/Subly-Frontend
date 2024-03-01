@@ -7,7 +7,7 @@ interface btnProps extends layout_func_click {
 
 const BtnIcon: FC<btnProps> = ({children, func, classStyle}) => {
     return (
-        <button className={`block flex items-center justify-center ${classStyle}`} onClick={func}>
+        <button className={`flex items-center justify-center ${classStyle}`} onClick={func}>
             {children}
         </button>
     )
